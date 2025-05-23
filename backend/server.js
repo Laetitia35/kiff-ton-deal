@@ -5,7 +5,7 @@ const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
 
-const { DefaultApi, Configuration } = require("amazon-paapi");
+const amazonPaapi = require("amazon-paapi");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,16 +22,13 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/public/index.html'));
 });
 
-
-// Amazon API config
-const amazon = new DefaultApi(
-    new Configuration({
-        accessKey: process.env.AMAZON_ACCESS_KEY,
-        secretKey: process.env.AMAZON_SECRET_KEY,
-        partnerTag: process.env.AMAZON_PARTNER_TAG,
-        marketplace: "www.amazon.fr",
-    })
-);
+// Par celui-ci :
+const amazon = amazonPaapi.DefaultApi({
+    accessKey: process.env.AMAZON_ACCESS_KEY,
+    secretKey: process.env.AMAZON_SECRET_KEY,
+    partnerTag: process.env.AMAZON_PARTNER_TAG,
+    marketplace: "www.amazon.fr",
+});
 
 // API endpoint
 app.get("/api/amazon", async (req, res) => {
