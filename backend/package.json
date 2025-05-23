@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "TonNom",
+  "author": "Kiff Ton Deal",
   "license": "MIT",
   "dependencies": {
     "amazon-paapi": "^1.0.7",
