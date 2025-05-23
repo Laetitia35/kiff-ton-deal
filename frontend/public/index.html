@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Kiff ton Deal - Bons plans & promos</title>
+        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <a href="/images/Logo-moderne-de-Kiff-Ton-Deal.png" class="logo">Kiff ton Deal</a>
+                    <span id="burger" class="burger">☰</span>
+
+                    <ul id="nav-links" class="nav-links">
+                        <li><a href="#deals-container">Bons plans</a></li>
+                        <li><a href="#categories-section">Catégories</a></li>
+                        <li><a href="#about-section">À propos</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-content container">
+                <h1>KIFF Ton Deal</h1>
+                <p class="tagline">Les meilleurs bons plans, promos et codes exclusifs pour faire des économies au quotidien !</p>
+                <div class="search-bar">
+                    <input type="text" id="search" placeholder="Cherche un bon plan..." aria-label="Recherche" />
+                    <button id="btn-search" aria-label="Rechercher">🔍</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Image promotionnelle dynamique -->
+        <section class="hero-images container">
+            <img src="/images/Affiche-dynamique-pour-Kiff-Ton-Deal.png" alt="Affiche dynamique pour Kiff Ton Deal" class="hero-img" />
+        </section>
+
+
+        <section class="promo-banner container">
+            <p>🔥 Flash promo : Jusqu'à -70% sur la tech & mode - Offre limitée à ne pas manquer ! 🔥</p>
+        </section>
+
+        <section id="categories-section" class="categories container">
+            <h2>Top catégories</h2>
+            <div class="category-list">
+                <button class="category-btn" data-keyword="tech">💻 Tech & High-Tech</button>
+                <button class="category-btn" data-keyword="mode">👗 Mode & Accessoires</button>
+                <button class="category-btn" data-keyword="maison">🏠 Maison & Déco</button>
+                <button class="category-btn" data-keyword="beauté">💄 Beauté & Santé</button>
+                <button class="category-btn" data-keyword="sport">🏀 Sport & Loisirs</button>
+            </div>
+        </section>
+
+        <section class="promo-images container">
+            <img src="/images/Promotions-vibrantes-et-style-audacieux.png" alt="Promotions vibrantes" class="promo-img" />
+            <img src="/images/Affiche-dynamique-pour-Kiff-Ton-Deal.png" alt="Affiche dynamique Kiff Ton Deal" class="promo-img" />
+        </section>
+
+
+        <section id="about-section" class="about container">
+            <h2>Pourquoi choisir Kiff ton Deal ?</h2>
+            <p>
+                Kiff ton Deal, c’est votre partenaire privilégié pour dénicher chaque jour les meilleures offres, promotions, et codes promo exclusifs sur une large gamme de produits.
+                Nous sélectionnons avec soin les bons plans les plus intéressants pour vous permettre de faire des économies intelligentes, rapides, et en toute confiance.
+            </p>
+            <p>
+                Que vous soyez fan de high-tech, passionné de mode, adepte de déco ou sportif dans l’âme, nous avons pensé à tout avec des catégories claires et des filtres simples pour trouver vite ce que vous cherchez.
+            </p>
+            <p>
+                Retrouvez ici des offres exclusives, des ventes flash, des réductions incroyables, et des codes promo à ne pas manquer — pour kiffer vos achats au meilleur prix !
+            </p>
+        </section>
+
+        <div id="loading" style="display: none;">
+             <div class="spinner"></div>
+        </div>
+
+
+        <main id="deals-container" aria-live="polite" aria-label="Liste des bons plans" class="container">
+            <!-- Les bons plans s'afficheront ici dynamiquement -->
+        </main>
+
+        <footer>
+            <div class="container footer-content">
+                <p>&copy; 2025 Kiff ton Deal | Suivez-nous sur <a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
+
+
+
