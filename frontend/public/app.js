@@ -9,7 +9,8 @@ function debounce(fn, delay) {
     };
 }
 
-const API_URL = "/api/amazon"; // ✅ fonctionne localement ET en ligne
+//const API_URL = "/api/amazon"; // ✅ fonctionne localement ET en ligne
+const API_URL = "https://api-kiff-ton-deal.onrender.com"
 
 async function fetchDeals(query = "bons plans") {
     const loader = document.getElementById("loading");
