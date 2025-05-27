@@ -74,10 +74,18 @@ body {
 }
 
 .logo {
-    font-weight: 700;
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
+    font-weight: 700;
+}
+
+.logo-img {
+    width: auto;
+    margin-right: 8px;
+    display: block; /* Évite les espaces blancs sous l’image */
 }
 
 .nav-links {
