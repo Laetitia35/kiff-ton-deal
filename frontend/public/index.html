@@ -1,101 +1,110 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Kiff ton Deal - Bons plans & promos</title>
-        <link rel="stylesheet" href="style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-    </head>
 
-    <body>
-        <header>
-            <nav class="navbar">
-                <div class="container">
-                    <a href="/" class="logo">
-                        <img src="/images/logo-ktd.png" alt="Logo Kiff ton Deal" class="logo-img" height="50">
-                       Kiff ton Deal
-                    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bons plans Amazon, tech et mode | Kiff ton Deal</title>
+    <meta name="description" content="Découvrez les meilleurs bons plans, promotions Amazon, high-tech, mode, maison et plus encore chaque jour sur Kiff ton Deal. Faites des économies en toute simplicité !" />
+    <link rel="canonical" href="https://kifftondeal.fr/" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/logo-ktd.png" type="image/png" />
+    <meta property="og:title" content="Kiff ton Deal - Bons plans Amazon & promos du jour" />
+    <meta property="og:description" content="Kiff ton Deal vous propose chaque jour les meilleures promotions Amazon et les bons plans du moment dans toutes les catégories !" />
+    <meta property="og:image" content="https://kifftondeal.fr/images/logo-ktd.png" />
+    <meta property="og:url" content="https://kifftondeal.fr/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bons plans Amazon et promos du jour - Kiff ton Deal" />
+    <meta name="twitter:description" content="Retrouvez les meilleures offres et bons plans Amazon sur Kiff ton Deal. Jusqu'à -70% sur tech, mode, maison..." />
+    <meta name="twitter:image" content="https://kifftondeal.fr/images/logo-ktd.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
 
-                    <span id="burger" class="burger">☰</span>
+  <body>
+    <header>
 
-                    <ul id="nav-links" class="nav-links">
-                        <li><a href="#deals-container">Bons plans</a></li>
-                        <li><a href="#categories-section">Catégories</a></li>
-                        <li><a href="#about-section">À propos</a></li>
-                        <li><a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="header-content container">
-                <h1>KIFF Ton Deal</h1>
-                <p class="tagline">Les meilleurs bons plans, promos et codes exclusifs pour faire des économies au quotidien !</p>
-                <div class="search-bar">
-                    <input type="text" id="search" placeholder="Cherche un bon plan..." aria-label="Recherche" />
-                    <button id="btn-search" aria-label="Rechercher">🔍</button>
-                </div>
-            </div>
-        </header>
+      <nav class="navbar">
+        <div class="container">
 
-        <section class="promo-banner container">
-            <p>🔥 Flash promo : Jusqu'à -70% sur la tech & mode - Offre limitée à ne pas manquer ! 🔥</p>
-        </section>
+          <a href="/" class="logo">
+            <img src="/images/logo-ktd.png" alt="Logo Kiff ton Deal" class="logo-img" height="50" />
+            Kiff ton Deal
+          </a>
+          
+          <span id="burger" class="burger" aria-label="Menu" tabindex="0">☰</span>
 
-        <section id="categories-section" class="categories container">
-            <h2>Top catégories</h2>
-            <div class="category-list">
-                <button class="category-btn" data-keyword="tech">💻 Tech & High-Tech</button>
-                <button class="category-btn" data-keyword="mode">👗 Mode & Accessoires</button>
-                <button class="category-btn" data-keyword="maison">🏠 Maison & Déco</button>
-                <button class="category-btn" data-keyword="beauté">💄 Beauté & Santé</button>
-                <button class="category-btn" data-keyword="sport">🏀 Sport & Loisirs</button>
-            </div>
-        </section>
-
-        <!-- Image promotionnelle dynamique -->
-        <section class="hero-images container">
-            <div class="img-box">
-                <img src="/images/affiche-dynamique.png" alt="Affiche" class="hero-img" />
-            </div>
-            <div class="img-box">
-                <img src="/images/femme-img-bons-plans.png" alt="img-bons-plans" class="promo-img" />
-            </div>
-        </section>
-
-        <section id="about-section" class="about container">
-            <h2>Pourquoi choisir Kiff ton Deal ?</h2>
-            <p>
-                Kiff ton Deal, c’est votre partenaire privilégié pour dénicher chaque jour les meilleures offres, promotions, et codes promo exclusifs sur une large gamme de produits.
-                Nous sélectionnons avec soin les bons plans les plus intéressants pour vous permettre de faire des économies intelligentes, rapides, et en toute confiance.
-            </p>
-            <p>
-                Que vous soyez fan de high-tech, passionné de mode, adepte de déco ou sportif dans l’âme, nous avons pensé à tout avec des catégories claires et des filtres simples pour trouver vite ce que vous cherchez.
-            </p>
-            <p>
-                Retrouvez ici des offres exclusives, des ventes flash, des réductions incroyables, et des codes promo à ne pas manquer — pour kiffer vos achats au meilleur prix !
-            </p>
-        </section>
-
-        <div id="loading" style="display: none;">
-             <div class="spinner"></div>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#deals-container">Bons plans</a></li>
+            <li><a href="#categories-section">Catégories</a></li>
+            <li><a href="#about-section">À propos</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
         </div>
+      </nav>
 
+      <div class="header-content container">
+        <h1>Bons plans Amazon & promos exclusives - Kiff ton Deal</h1>
+        <p class="tagline">Les meilleurs bons plans, réductions et codes promos Amazon pour économiser au quotidien.</p>
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Cherche un bon plan Amazon, tech, mode..." aria-label="Recherche de bons plans" />
+          <button id="btn-search" aria-label="Rechercher">🔍</button>
+        </div>
+      </div>
 
-        <main id="deals-container" aria-live="polite" aria-label="Liste des bons plans" class="container">
-            <!-- Les bons plans s'afficheront ici dynamiquement -->
-        </main>
+    </header>
 
-        <footer>
-            <div class="container footer-content">
-                <p>&copy; 2025 Kiff ton Deal | Suivez-nous sur <a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></p>
-            </div>
-        </footer>
+    <section class="promo-banner container">
+      <p>🔥 Flash promo : Jusqu'à -70% sur la tech & mode - Offre limitée à ne pas manquer ! 🔥</p>
+    </section>
 
-        <script src="app.js"></script>
+    <section id="categories-section" class="categories container">
+      <h2>Catégories les plus populaires</h2>
+      <div class="category-list">
+        <button class="category-btn" data-keyword="tech">💻 Tech & High-Tech</button>
+        <button class="category-btn" data-keyword="mode">👗 Mode & Accessoires</button>
+        <button class="category-btn" data-keyword="maison">🏠 Maison & Déco</button>
+        <button class="category-btn" data-keyword="beauté">💄 Beauté & Santé</button>
+        <button class="category-btn" data-keyword="sport">🏀 Sport & Loisirs</button>
+      </div>
+    </section>
 
-    </body>
+    <section class="hero-images container">
+      <div class="img-box">
+        <img src="/images/affiche-dynamique.png" alt="Offre promotionnelle tech et mode" class="hero-img" />
+      </div>
+      <div class="img-box">
+        <img src="/images/femme-img-bons-plans.png" alt="Illustration femme bons plans" class="promo-img" />
+      </div>
+    </section>
+
+    <section id="about-section" class="about container">
+      <h2>Pourquoi faire confiance à Kiff ton Deal ?</h2>
+      <p>Kiff ton Deal sélectionne chaque jour les meilleures offres, réductions et codes promo du web, notamment sur Amazon et d'autres grandes enseignes.</p>
+      <p>Grâce à notre veille permanente et nos partenariats, vous bénéficiez d’offres exclusives pour économiser sur tous vos achats : high-tech, mode, déco, sport, et bien plus.</p>
+      <p>Notre mission : vous aider à consommer malin, sans compromis sur la qualité ou le style. C’est ça, kiffer ses achats !</p>
+    </section>
+
+    <div id="loading" style="display: none;">
+      <div class="spinner"></div>
+    </div>
+
+    <main id="deals-container" aria-live="polite" aria-label="Liste des bons plans" class="container">
+      <!-- Les bons plans s'afficheront ici dynamiquement -->
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>&copy; 2025 Kiff ton Deal | Suivez-nous sur <a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+  </body>
+
 </html>
+
 
 
 
