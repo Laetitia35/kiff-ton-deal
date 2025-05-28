@@ -1,4 +1,5 @@
 /* style.css */
+
 /* Reset et police */
 body, h1, h2, p, ul, li, button, input {
     margin: 0; padding: 0; box-sizing: border-box;
@@ -362,7 +363,7 @@ footer a:hover {
 }
 
 .img-box {
-    max-width: 25%;
+    max-width: 40%;
     flex: 1 1 200px;
     box-sizing: border-box;
 }
@@ -371,5 +372,14 @@ footer a:hover {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.category-btn.active {
+  background-color: #ff4b2b;
+  color: white;
+}
+
+#nav-links {
+  transition: transform 0.3s ease;
 }
 
