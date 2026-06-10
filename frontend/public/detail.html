@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Détail produit | Kiff ton Deal</title>
+    <meta name="description" content="Détail du bon plan Amazon sélectionné par Kiff ton Deal. Prix, remise, caractéristiques et lien affilié Amazon." />
+    <link rel="canonical" href="https://kifftondeal.fr/detail.html" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/logo-ktd.png" type="image/png" />
+    <meta property="og:title" content="Bon plan Amazon | Kiff ton Deal" />
+    <meta property="og:description" content="Découvrez ce bon plan Amazon sélectionné par Kiff ton Deal." />
+    <meta property="og:image" content="https://kifftondeal.fr/images/logo-ktd.png" />
+    <meta property="og:url" content="https://kifftondeal.fr/detail.html" />
+    <meta property="og:type" content="website" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="/" class="logo">
+            <img src="/images/logo-ktd.png" alt="Logo Kiff ton Deal" class="logo-img" height="50" />
+            KIFF Ton DEAL
+          </a>
+          <span id="burger" class="burger" aria-label="Menu" tabindex="0" role="button">☰</span>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="/#deals-container">Bons plans</a></li>
+            <li><a href="/#categories-section">Catégories</a></li>
+            <li><a href="/#about-section">À propos</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Fil d'Ariane -->
+    <nav class="breadcrumb container" aria-label="Fil d'Ariane">
+      <a href="/">Accueil</a>
+      <span class="breadcrumb-sep">›</span>
+      <span id="breadcrumb-category"></span>
+      <span class="breadcrumb-sep">›</span>
+      <span id="breadcrumb-title" class="breadcrumb-current"></span>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="product-detail container" id="product-detail-main">
+
+      <!-- Colonne image -->
+      <div class="product-image-section">
+        <div id="product-badge-detail" class="product-badge-detail"></div>
+        <img id="product-main-image" src="" alt="" class="product-main-img" />
+      </div>
+
+      <!-- Colonne infos -->
+      <div class="product-info-section">
+
+        <span class="product-category-badge" id="product-category-badge"></span>
+
+        <h1 id="product-title" class="product-title"></h1>
+
+        <div class="rating-block" id="product-rating"></div>
+
+        <div class="price-detail-block">
+          <div class="current-price-big" id="product-price"></div>
+          <div class="original-price-row">
+            <span id="product-original-price"></span>
+            <span class="savings-badge-big" id="product-savings-pct"></span>
+          </div>
+          <p class="savings-amount-detail" id="product-savings-amount"></p>
+        </div>
+
+        <a id="product-affiliate-btn" href="#" target="_blank" rel="noopener noreferrer sponsored" class="btn-buy-amazon">
+          <span class="btn-buy-label">🛒 Voir sur Amazon</span>
+          <span class="btn-buy-sub">Lien affilié — offre sous réserve de disponibilité</span>
+        </a>
+
+        <div class="product-description-block">
+          <h2 class="section-label">Description</h2>
+          <p id="product-description" class="product-description"></p>
+        </div>
+
+        <div class="product-features-block">
+          <h2 class="section-label">Points forts</h2>
+          <ul id="product-features-list" class="product-features-list"></ul>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Retour -->
+    <div class="back-btn-container container">
+      <a href="/" class="btn-back">← Retour aux bons plans</a>
+    </div>
+
+    <!-- Autres bons plans -->
+    <section class="related-section container">
+      <h2 class="related-title">Autres bons plans à saisir</h2>
+      <div id="related-container" class="related-grid"></div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <p>&copy; 2025 Kiff ton Deal | Suivez-nous sur <a href="https://www.facebook.com/profile.php?id=61576763300998" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="detail.js"></script>
+
+  </body>
+</html>
