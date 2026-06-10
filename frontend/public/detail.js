@@ -62,11 +62,18 @@ function renderDetail(product) {
 
   // Prix
   document.getElementById("product-price").textContent = `${product.price.toFixed(2)} €`;
-  document.getElementById("product-original-price").innerHTML =
-    `<del>${product.originalPrice.toFixed(2)} €</del>`;
-  document.getElementById("product-savings-pct").textContent = `-${product.savingsPercent} %`;
-  document.getElementById("product-savings-amount").textContent =
-    `💰 Vous économisez ${product.savings.toFixed(2)} €`;
+
+  if (product.originalPrice) {
+    document.getElementById("product-original-price").innerHTML =
+      `<del>${product.originalPrice.toFixed(2)} €</del>`;
+    document.getElementById("product-savings-pct").textContent = `-${product.savingsPercent} %`;
+    document.getElementById("product-savings-amount").textContent =
+      `💰 Vous économisez ${product.savings.toFixed(2)} €`;
+  } else {
+    document.getElementById("product-savings-pct").style.display = "none";
+    document.getElementById("product-savings-amount").textContent =
+      product.promoCode ? `🏷️ Code promo : ${product.promoCode}` : "";
+  }
 
   // Bouton Amazon
   document.getElementById("product-affiliate-btn").href = product.affiliateLink;

@@ -1,5 +1,8 @@
 const API_URL = "https://api-kiff-ton-deal.onrender.com/api/amazon";
 
+// Mettre à false pour activer l'API Amazon (quand les clés sont configurées)
+const API_DISABLED = true;
+
 let currentPage = 1;
 let maxPages = 10;
 let currentKeyword = "";
@@ -157,6 +160,20 @@ async function fetchDeals(keyword = currentKeyword, page = currentPage, category
   container.innerHTML = "";
 
   history.replaceState(null, "", `?keyword=${encodeURIComponent(keyword)}&category=${encodeURIComponent(category)}&page=${page}`);
+
+  // Mode démo direct — retirer API_DISABLED quand les clés Amazon sont configurées
+  if (API_DISABLED) {
+    isDemoMode = true;
+    showDemoBanner();
+    const filtered = filterDemoProducts(keyword, category);
+    displayDemoDeals(filtered);
+    maxPages = 1;
+    paginationInfo.textContent = "Démo";
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+    if (loading) loading.style.display = "none";
+    return;
+  }
 
   try {
     const response = await fetch(buildUrl(keyword, category, page));
